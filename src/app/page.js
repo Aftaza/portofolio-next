@@ -1,22 +1,21 @@
 import Image from 'next/image'
 import Hero from '^/Hero.svg'
-import Logo from '^/Logo.svg'
 import Link from 'next/link'
 
 const page = () => {
     return (
         <>
-            <div className="ms-40 mt-40">
-                <div className='grid grid-cols-3 p-2 w-11/12'>
-                    <div className='relative ms-5 w-60 '>
+            <div className="flex justify-center items-center min-h-screen">
+                <div className='flex justify-center items-center gap-10 w-3/4 px-5'>
+                    <div className='ms-0 h-full w-fit '>
                         <Image
                             src={Hero}
                             alt="Aftaza Picture"
-                            className='absolute h-80 w-auto'
+                            className='h-82 w-auto'
                         />
                     </div>
 
-                    <div className='mt-20 ms-px w-full'>
+                    <div className='mt-20 ms-0 w-full'>
                         <h1 className='font-bold text-4xl'>M Alfian Taftazani</h1>
                         <h3 className='italic text-xl'>Full Stack Web Developer</h3>
                         <br/> <br/>
@@ -24,7 +23,6 @@ const page = () => {
                             &gt; Let&lsquo;s Goo . . .
                         </Link>
                     </div>
-                    <Image src={Logo} alt="Aftaza Logo's"/>
                 </div>
             </div>
         </>

@@ -1,6 +1,10 @@
 import Blops from '@/components/Blops'
 import './globals.css'
 import { Poppins, Inter } from 'next/font/google'
+import Cross from '@/components/Cross'
+import Circle from '@/components/Circle'
+import Logo from '@/components/Logo'
+import Polygon from '@/components/Polygon'
 
 const poppins = Poppins({
      subsets: ['latin'],
@@ -18,7 +22,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
         <body className={poppins.className}>
+            <Circle />
+            <Cross />
             {children}
+            <Logo />
+            <Polygon />
             <Blops />
         </body>
     </html>
