@@ -5,6 +5,7 @@ import Cross from '@/components/Cross'
 import Circle from '@/components/Circle'
 import Logo from '@/components/Logo'
 import Polygon from '@/components/Polygon'
+import ParticlesBg from '@/components/ParticlesBg'
 
 const poppins = Poppins({
      subsets: ['latin'],
@@ -22,6 +23,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
         <body className={poppins.className}>
+            <ParticlesBg className="absolute" />
             <Circle />
             <Cross />
             {children}
