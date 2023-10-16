@@ -1,5 +1,5 @@
 import React from 'react'
-import Circlee from "^/Circle.svg"
+import Circlee from "^/circle.svg"
 import Image from 'next/image'
 
 const Circle = () => {
